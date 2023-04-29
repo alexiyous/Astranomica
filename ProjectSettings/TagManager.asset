@@ -12,6 +12,7 @@ TagManager:
   - FirePickUp
   - WaterPickUp
   - LightningPickUp
+  - Bullet
   layers:
   - Default
   - TransparentFX

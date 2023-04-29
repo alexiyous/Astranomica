@@ -5,6 +5,7 @@ using UnityEngine;
 public class Type1_EnemyHealt : MonoBehaviour
 {
     [SerializeField] private float health = 1f;
+    public int pointValue = 100;
 
     public void TakeDamage(float damage)
     {
@@ -17,6 +18,7 @@ public class Type1_EnemyHealt : MonoBehaviour
 
     public void Die()
     {
+        ScoreManager.instance.AddScore(pointValue);
         Destroy(gameObject);
     }
 }

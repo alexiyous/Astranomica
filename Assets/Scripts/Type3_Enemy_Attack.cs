@@ -8,6 +8,7 @@ public class Type3_Enemy_Attack : MonoBehaviour
     public float lastShotTime = 0f;
     public float fireballSpeed = 1.5f;
     public float fireballTime = 2f;
+    public Transform launchPoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class Type3_Enemy_Attack : MonoBehaviour
         {
             //Reset the last shot time
             lastShotTime = Time.time;
-            GameObject fireball = Instantiate(fireballPrefab, transform.position, Quaternion.identity);
+            GameObject fireball = Instantiate(fireballPrefab, launchPoint.position, Quaternion.identity);
 
             Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
             rb.velocity = new Vector2(0f, -fireballSpeed);
