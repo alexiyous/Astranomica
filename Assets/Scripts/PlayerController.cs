@@ -136,4 +136,12 @@ public class PlayerController : MonoBehaviour
             slotManager.currentMagic.Clear();
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("FirePickUp"))
+        {
+            slotManager.AddMagicElement("Fire");
+        }
+    }
 }

@@ -54,8 +54,8 @@ public class SpellSlotManager : MonoBehaviour
         if (currentMagic.Count == 3 && currentMagic.Skip(1).Any(e => e != currentMagic[0]))
         {
             Debug.Log("list total 3 & semua berbeda");
-                player.canCastNothing = true;
-                Debug.Log("bisa cast Nothing");
+            player.canCastNothing = true;
+            Debug.Log("bisa cast Nothing");
         }
 
     }
