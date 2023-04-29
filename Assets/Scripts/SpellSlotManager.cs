@@ -1,11 +1,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpellSlotManager : MonoBehaviour
 {
     public List<string> currentMagic;
     public PlayerController player;
+
+    public Image[] elementSlots; // array of Image UI elements representing the magic element slots
+    public Sprite fireSprite; // sprite for the fire magic element
+    public Sprite waterSprite; // sprite for the water magic element
+    public Sprite lightningSprite; // sprite for the lightning magic element
+
 
     private void Start()
     {
@@ -18,7 +25,31 @@ public class SpellSlotManager : MonoBehaviour
         {
             Debug.Log("Amaan");
             currentMagic.Add(elementType);
+            UpdateUI();
             CheckForSpells();
+        }
+    }
+
+    private void UpdateUI()
+    {
+        for (int i = 0; i < elementSlots.Length; i++)
+        {
+            if (i < currentMagic.Count)
+            {
+                // set the image of the slot to the appropriate magic element sprite based on the corresponding element in the list
+                if (currentMagic[i] == "Fire")
+                {
+                    elementSlots[i].sprite = fireSprite;
+                }
+                else if (currentMagic[i] == "Water")
+                {
+                    elementSlots[i].sprite = waterSprite;
+                }
+                else if (currentMagic[i] == "Lightning")
+                {
+                    elementSlots[i].sprite = lightningSprite;
+                }
+            }
         }
     }
 
@@ -58,5 +89,13 @@ public class SpellSlotManager : MonoBehaviour
             Debug.Log("bisa cast Nothing");
         }
 
+    }
+
+    public void DeleteSlotUI()
+    {
+        foreach (Image image in elementSlots)
+        {
+            image.sprite = null;
+        }
     }
 }

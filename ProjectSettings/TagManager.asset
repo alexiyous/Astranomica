@@ -9,6 +9,9 @@ TagManager:
   - Skill3
   - Enemy
   - DeathZone
+  - FirePickUp
+  - WaterPickUp
+  - LightningPickUp
   layers:
   - Default
   - TransparentFX

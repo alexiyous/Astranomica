@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public bool canCastWater = false;
     public bool canCastLightning = false;
     public bool canCastNothing = false;
+    public bool pickUpElements = false;
 
     private Vector2 origPos, targetPos;
 
@@ -18,9 +19,11 @@ public class PlayerController : MonoBehaviour
     public float limitRight;
     public float limitLeft;
 
+    public int playerPickUpCounter = 0;
+
     private Rigidbody2D playerRB;
     public SpellSlotManager slotManager;
-
+    public GameManager gameManager;
 
     private void Start()
     {
@@ -40,7 +43,15 @@ public class PlayerController : MonoBehaviour
             {
                 CastingSpell();
                 allSlotReady = false;
+                playerPickUpCounter = 0;
+                gameManager.canSpawnRandom = true;
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            pickUpElements = true;
+            playerPickUpCounter += 1;
         }
     }
 
@@ -116,32 +127,57 @@ public class PlayerController : MonoBehaviour
             Debug.Log("FIRE!");
             canCastFire = false;
             slotManager.currentMagic.Clear();
+            slotManager.DeleteSlotUI();
         }
         else if (canCastWater)
         {
             Debug.Log("Water");
             canCastWater = false;
             slotManager.currentMagic.Clear();
+            slotManager.DeleteSlotUI();
         }
         else if (canCastLightning)
         {
             Debug.Log("Lightning");
             canCastLightning = false;
             slotManager.currentMagic.Clear();
+            slotManager.DeleteSlotUI();
         }
         else if (canCastNothing)
         {
             Debug.Log("Nothing");
             canCastNothing = false;
             slotManager.currentMagic.Clear();
+            slotManager.DeleteSlotUI();
         }
     }
 
-   /* private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("FirePickUp"))
+        if (pickUpElements)
         {
-           *//* slotManager.AddMagicElement("Fire");*//*
+            Debug.Log("Detect");
+            if (collision.gameObject.CompareTag("FirePickUp"))
+            {
+                slotManager.AddMagicElement("Fire");
+                pickUpElements = false;
+                gameManager.pickedUp = true;
+                Debug.Log(pickUpElements);
+            }
+
+            if (collision.gameObject.CompareTag("WaterPickUp"))
+            {
+                slotManager.AddMagicElement("Water");
+                pickUpElements = false;
+                gameManager.pickedUp = true;
+            }
+
+            if (collision.gameObject.CompareTag("LightningPickUp"))
+            {
+                slotManager.AddMagicElement("Lightning");
+                pickUpElements = false;
+                gameManager.pickedUp = true;
+            }
         }
-    }*/
+    }
 }
