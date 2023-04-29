@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2895252633356243645}
   m_Layer: 0
   m_Name: Water
-  m_TagString: LightningPickUp
+  m_TagString: WaterPickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
