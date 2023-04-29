@@ -3,15 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Skill1
+  - Skill2
+  - Skill3
+  - Enemy
+  - DeathZone
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Wall
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
