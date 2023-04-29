@@ -29,7 +29,10 @@ public class EnemyMoveBottom : MonoBehaviour
     // Stop the coroutine when the enemy is disabled
     private void OnDisable()
     {
-        StopCoroutine(moveCoroutine);
+        if (moveCoroutine != null)
+        {
+            StopCoroutine(moveCoroutine);
+        }
     }
 
     // Update is called once per frame

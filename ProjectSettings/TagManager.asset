@@ -9,6 +9,7 @@ TagManager:
   - Skill3
   - Enemy
   - DeathZone
+  - Bullet
   layers:
   - Default
   - TransparentFX
