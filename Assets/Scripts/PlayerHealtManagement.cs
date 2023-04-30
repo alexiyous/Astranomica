@@ -9,7 +9,7 @@ public class PlayerHealtManagement : MonoBehaviour
         //Type1_EnemyHealt enemyHealth = other.GetComponent<Type1_EnemyHealt>();
         if (other.CompareTag("Enemy"))
         {
-            HealthManager_v1.playerHealth -= 1;
+            HealthManager_v1.playerHealth -= 1f;
             //enemyHealth.TakeDamage(1f);
             if (HealthManager_v1.playerHealth <= 0)
             {
@@ -18,7 +18,7 @@ public class PlayerHealtManagement : MonoBehaviour
         }
         if (other.CompareTag("Bullet"))
         {
-            HealthManager_v1.playerHealth -= 1;
+            HealthManager_v1.playerHealth -= 1f;
             Destroy(other.gameObject);
         }
     }

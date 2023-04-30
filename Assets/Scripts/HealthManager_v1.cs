@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HealthManager_v1 : MonoBehaviour
 {
-    [SerializeField]public static float playerHealth = 3;
+    public static float playerHealth = 3;
     public Image[] hearts;
     public Sprite fullHearts;
     public Sprite EmptyHearts;
@@ -16,7 +16,6 @@ public class HealthManager_v1 : MonoBehaviour
         foreach(Image img in hearts)
         {
             img.sprite = EmptyHearts;
-
         }
 
         for( int i = 0; i < playerHealth; i++)

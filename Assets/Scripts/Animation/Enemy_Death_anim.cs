@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Enemy_Death_anim : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Animator anim;
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
