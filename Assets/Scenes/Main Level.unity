@@ -3075,7 +3075,7 @@ MonoBehaviour:
   canCastLightning: 0
   canCastNothing: 0
   pickUpElements: 0
-  limitRight: 2.5
+  limitRight: 2.7
   limitLeft: -1.5
   playerPickUpCounter: 0
   slotManager: {fileID: 5448236483480248658}
