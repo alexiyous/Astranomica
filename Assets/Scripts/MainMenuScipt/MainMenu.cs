@@ -17,6 +17,11 @@ public class MainMenu : MonoBehaviour
 
     public void goToCredit()
     {
-        //SceneManager.LoadScene();
+        SceneManager.LoadScene("Credit");
+    }
+
+    public void goToTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e1935111aa58c4542978cd4a8cd09e3a
+guid: d87bda9052be82b4287ce72ce9316676
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button norma_0
+      name: tutor ama kredit dipencet_0
       rect:
         serializedVersion: 2
         x: 55
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97215c3b29cb1b147bfaf0886904f0d1
-      internalID: -1197901990
+      spriteID: 8803f53873330e442ac8e212671964da
+      internalID: 1262981195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: button norma_1
+      name: tutor ama kredit dipencet_1
       rect:
         serializedVersion: 2
         x: 55
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca4c824438b763645852b684bebeb1ed
-      internalID: 678380885
+      spriteID: 08cb3a1279d225d49af5ff7ca2452fa4
+      internalID: 934308912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: button norma_2
+      name: tutor ama kredit dipencet_2
       rect:
         serializedVersion: 2
         x: 55
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae617b7e9a2997e4db54d59bc3ae1d51
-      internalID: 1616082038
+      spriteID: 640a2a1bf9dc8304e98694400b6e1699
+      internalID: 1495275479
       vertices: []
       indices: 
       edges: []
@@ -190,9 +190,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      button norma_2: 1616082038
-      button norma_0: -1197901990
-      button norma_1: 678380885
+      tutor ama kredit dipencet_0: 1262981195
+      tutor ama kredit dipencet_1: 934308912
+      tutor ama kredit dipencet_2: 1495275479
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
