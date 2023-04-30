@@ -24,6 +24,7 @@ public class SpawnBos : MonoBehaviour
         while (true)
         {
             Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+            AudioManager.instance.PlaySFXAdjusted(6);
 
             if (Time.time > spawnRateDecreaseInterval && currentSpawnRate > maxSpawnRate)
             {

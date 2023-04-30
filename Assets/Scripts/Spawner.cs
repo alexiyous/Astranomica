@@ -25,6 +25,7 @@ public class Spawner : MonoBehaviour
             int randSpawn = Random.Range(0, spawnPoint.Length);
             //Prepare prefab at location 
             Instantiate(enemyPrefab[randEnemy], spawnPoint[randSpawn].position, transform.rotation);
+            AudioManager.instance.PlaySFXAdjusted(5);
             yield return new WaitForSeconds(spawnRate);
         }
     }

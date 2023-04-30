@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.S))
         {
+            AudioManager.instance.PlaySFXAdjusted(8);
             pickUpElements = true;
             playerPickUpCounter += 1;
         }
@@ -142,6 +143,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("FIRE!");
             Instantiate(fireball, shotPoint.transform.position, Quaternion.identity);
+            AudioManager.instance.PlaySFXAdjusted(0);
             canCastFire = false;
             slotManager.currentMagic.Clear();
             slotManager.DeleteSlotUI();
@@ -150,6 +152,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Water");
             Instantiate(water, shotPoint.transform.position, Quaternion.identity);
+            AudioManager.instance.PlaySFXAdjusted(1);
             canCastWater = false;
             slotManager.currentMagic.Clear();
             slotManager.DeleteSlotUI();
@@ -158,6 +161,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Lightning");
             ThunderAttack();
+            AudioManager.instance.PlaySFXAdjusted(2);
             canCastLightning = false;
             slotManager.currentMagic.Clear();
             slotManager.DeleteSlotUI();
@@ -166,6 +170,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Nothing");
             Instantiate(smoke, smokePoint.transform.position, Quaternion.identity);
+            AudioManager.instance.PlaySFXAdjusted(3);
             canCastNothing = false;
             slotManager.currentMagic.Clear();
             slotManager.DeleteSlotUI();

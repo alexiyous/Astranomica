@@ -161,4 +161,4 @@ MonoBehaviour:
   theRB: {fileID: 8240676035385909514}
   moveDIR: {x: 0, y: 1}
   anim: {fileID: 8240676035385909515}
-  damageAmount: 1
+  damageAmount: 3

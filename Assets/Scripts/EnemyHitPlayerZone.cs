@@ -13,6 +13,7 @@ public class EnemyHitPlayerZone : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             health.playerHealth -= 1f;
+            AudioManager.instance.PlaySFXAdjusted(7);
             if (enemyHealth != null)
             {
                 enemyHealth.Die();
