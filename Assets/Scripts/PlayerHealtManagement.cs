@@ -22,6 +22,11 @@ public class PlayerHealtManagement : MonoBehaviour
         {
             health.playerHealth -= 1f;
             Destroy(other.gameObject);
+            if (health.playerHealth <= 0)
+            {
+                //Player is dead, game over
+                health.GameOver();
+            }
         }
     }
 }

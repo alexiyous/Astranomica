@@ -36,7 +36,7 @@ public class Type1_EnemyHealt : MonoBehaviour
 
     public void Die()
     {
-        rb.bodyType = RigidbodyType2D.Static;
+        //rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("death");
         GetComponent<EnemyMoveBottom>().enabled = false;
         GetComponent<Collider2D>().enabled = false;
