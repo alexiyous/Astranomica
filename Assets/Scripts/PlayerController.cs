@@ -213,7 +213,9 @@ public class PlayerController : MonoBehaviour
             }
             else if (bos != null)
             {
+                Instantiate(thunder, thunderPoint.transform.position, Quaternion.identity);
                 bos.TakeDamage(1);
+
             }
         }
     }
