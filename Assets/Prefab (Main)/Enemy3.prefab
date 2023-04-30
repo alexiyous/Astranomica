@@ -195,6 +195,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   pointValue: 30
+  anim: {fileID: 0}
+  colorChange: {r: 1, g: 0, b: 0, a: 1}
+  defaultColor: {r: 1, g: 1, b: 1, a: 0}
+  spriteRenderer: {fileID: 5770746532931231741}
+  hitduration: 0.5
 --- !u!1 &5770746533770870974
 GameObject:
   m_ObjectHideFlags: 0

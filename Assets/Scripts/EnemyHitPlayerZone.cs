@@ -13,11 +13,13 @@ public class EnemyHitPlayerZone : MonoBehaviour
             HealthManager_v1.playerHealth -= 1f;
             if (enemyHealth != null)
             {
-                enemyHealth.Die();
+                enemyHealth.TakeDamage(1f);
+                //enemyHealth.Die();
             }
             else if (bossHealt != null)
             {
-                bossHealt.Die();
+                bossHealt.TakeDamage(1f);
+                //bossHealt.Die();
             }
             if (HealthManager_v1.playerHealth <= 0)
             {
