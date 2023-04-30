@@ -207,3 +207,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   pointValue: 10
+  anim: {fileID: 0}
+  colorChange: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  spriteRenderer: {fileID: 0}
+  hitduration: 0.5

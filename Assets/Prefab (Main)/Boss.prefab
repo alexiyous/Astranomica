@@ -180,6 +180,10 @@ MonoBehaviour:
   health: 2
   pointValue: 50
   anim: {fileID: 0}
+  colorChange: {r: 1, g: 0, b: 0, a: 1}
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  spriteRenderer: {fileID: 258465028168622388}
+  hitduration: 0.5
 --- !u!1 &258465028328779142
 GameObject:
   m_ObjectHideFlags: 0

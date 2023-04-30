@@ -16,7 +16,7 @@ public class EnemyHitPlayerZone : MonoBehaviour
                 enemyHealth.Die();
             }
             else if (bossHealt != null)
-            {
+            { 
                 bossHealt.Die();
             }
             if (HealthManager_v1.playerHealth <= 0)
