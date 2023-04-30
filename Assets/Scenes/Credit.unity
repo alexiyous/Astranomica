@@ -184,8 +184,8 @@ MonoBehaviour:
   m_text: "Programmer : Alexius Andrianno Alfa Renanta\r\n\t             Juan Christopher
     Young"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bc519ce3f9665424684f3adeaffe4e49, type: 2}
+  m_sharedMaterial: {fileID: -4888793982737987846, guid: bc519ce3f9665424684f3adeaffe4e49, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -538,8 +538,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Audio Designer : Alexius Andrianno Alfa Renanta\r\n "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bc519ce3f9665424684f3adeaffe4e49, type: 2}
+  m_sharedMaterial: {fileID: -4888793982737987846, guid: bc519ce3f9665424684f3adeaffe4e49, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -673,8 +673,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Designer : Alexius Andrianno Alfa Renanta\r\n "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bc519ce3f9665424684f3adeaffe4e49, type: 2}
+  m_sharedMaterial: {fileID: -4888793982737987846, guid: bc519ce3f9665424684f3adeaffe4e49, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -942,8 +942,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Credit : '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bc519ce3f9665424684f3adeaffe4e49, type: 2}
+  m_sharedMaterial: {fileID: -4888793982737987846, guid: bc519ce3f9665424684f3adeaffe4e49, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1341,8 +1341,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Artist : Hamdalla Agil Putra Nasol\n           Satrio Pinilih"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bc519ce3f9665424684f3adeaffe4e49, type: 2}
+  m_sharedMaterial: {fileID: -4888793982737987846, guid: bc519ce3f9665424684f3adeaffe4e49, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
