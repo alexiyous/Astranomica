@@ -27,9 +27,11 @@ public class PlayerController : MonoBehaviour
     public GameObject fireball;
     public GameObject thunder;
     public GameObject water;
+    public GameObject smoke;
     public Animator anim;
     public Transform shotPoint;
     public Transform thunderPoint;
+    public Transform smokePoint;
 
 
 
@@ -163,6 +165,7 @@ public class PlayerController : MonoBehaviour
         else if (canCastNothing)
         {
             Debug.Log("Nothing");
+            Instantiate(smoke, smokePoint.transform.position, Quaternion.identity);
             canCastNothing = false;
             slotManager.currentMagic.Clear();
             slotManager.DeleteSlotUI();

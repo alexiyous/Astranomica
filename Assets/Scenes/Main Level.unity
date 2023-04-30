@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &162010953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 162010954}
+  m_Layer: 10
+  m_Name: Smoke Attack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &162010954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162010953}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.29, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1283908409723883101}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &186597267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3045,16 +3076,18 @@ MonoBehaviour:
   canCastNothing: 0
   pickUpElements: 0
   limitRight: 2.5
-  limitLeft: -2.5
+  limitLeft: -1.5
   playerPickUpCounter: 0
   slotManager: {fileID: 5448236483480248658}
   gameManager: {fileID: 7331044401333674907}
   fireball: {fileID: 8240676035385909510, guid: cdfe98deab861754cbc76c2ac8bea3b3, type: 3}
   thunder: {fileID: 518688061253910970, guid: c568a19c1bc7aaa4b9e3db81db671b9f, type: 3}
   water: {fileID: 2952775192930711140, guid: 90b39493a6899444fa9f1f3b6fdd8076, type: 3}
+  smoke: {fileID: 8602214012623885356, guid: 1ac48a2324cbf7748aaca030968a6a31, type: 3}
   anim: {fileID: 1283908409094172224}
   shotPoint: {fileID: 1283908408422224173}
   thunderPoint: {fileID: 1283908408159064704}
+  smokePoint: {fileID: 162010954}
 --- !u!4 &1283908409723883101
 Transform:
   m_ObjectHideFlags: 0
@@ -3070,6 +3103,7 @@ Transform:
   - {fileID: 1283908409094172226}
   - {fileID: 1283908408422224173}
   - {fileID: 1283908408159064704}
+  - {fileID: 162010954}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
