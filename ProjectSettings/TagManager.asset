@@ -21,11 +21,11 @@ TagManager:
   - Wall
   - Water
   - UI
-  - Player
+  - Enemy
   - StopLayer
   - Bullet
   - DeathZone
-  - 
+  - Player
   - 
   - 
   - 

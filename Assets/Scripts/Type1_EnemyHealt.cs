@@ -18,7 +18,7 @@ public class Type1_EnemyHealt : MonoBehaviour
 
     public void Die()
     {
-        ScoreManager.instance.AddScore(pointValue);
+        /*ScoreManager.instance.AddScore(pointValue);*/
         Destroy(gameObject);
     }
 }
