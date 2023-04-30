@@ -9,18 +9,12 @@ public class EnemyHitPlayerZone : MonoBehaviour
         Type1_EnemyHealt enemyHealth = other.GetComponent<Type1_EnemyHealt>();
         if (other.CompareTag("Enemy"))
         {
-            HealthManager_v1.playerHealth -= 0.5f;
-            //Destroy(other.gameObject);
-            enemyHealth.TakeDamage(10f);
-            Physics2D.IgnoreCollision(other, GetComponent<Collider2D>());
+            //HealthManager_v1.playerHealth -= 0.5f;
+            Destroy(other.gameObject);
             if (HealthManager_v1.playerHealth <= 0)
             {
                 // Player is dead, game over
             }
-        }
-        if (other.CompareTag("Bullet"))
-        {
-            Destroy(other.gameObject);
         }
     }
 }

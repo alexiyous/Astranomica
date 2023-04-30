@@ -9,7 +9,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Transform[] spawnPoint;
     private void Start()
     {
-        StartCoroutine(SpawnRoutine());
+        StartCoroutine(SpawnWithDelay(4f));
     }
     private void Update()
     {
@@ -27,7 +27,11 @@ public class Spawner : MonoBehaviour
             Instantiate(enemyPrefab[randEnemy], spawnPoint[randSpawn].position, transform.rotation);
             yield return new WaitForSeconds(spawnRate);
         }
-
+    }
+    private IEnumerator SpawnWithDelay(float delaySeconds)
+    {
+        yield return new WaitForSeconds(delaySeconds);
+        StartCoroutine(SpawnRoutine());
     }
 
 }

@@ -31,6 +31,9 @@ public class Boss : MonoBehaviour
             {
                 movePoint.position += new Vector3(0f, -1f, 0f);
                 isMovingRight = !isMovingRight;
+                Vector3 scale = transform.localScale;
+                scale.x *= -1;
+                transform.localScale = scale;
             }
             else
             {
