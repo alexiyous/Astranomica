@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOverController : MonoBehaviour
 {
+
     public void BackToMainMenu()
     {
         Time.timeScale = 1f;
@@ -14,7 +15,8 @@ public class GameOverController : MonoBehaviour
     public void Replay()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Level");
+        SceneManager.LoadScene("Main Level");
+
     }
     private void Update()
     {
