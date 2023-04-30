@@ -24,6 +24,10 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D playerRB;
     public SpellSlotManager slotManager;
     public GameManager gameManager;
+    public Animator anim;
+    public Transform shotPoint;
+    public GameObject fireball;
+
 
     private void Start()
     {
@@ -41,6 +45,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyUp(KeyCode.W))
             {
+                anim.SetTrigger("attack");
                 CastingSpell();
                 allSlotReady = false;
                 playerPickUpCounter = 0;
@@ -53,6 +58,9 @@ public class PlayerController : MonoBehaviour
             pickUpElements = true;
             playerPickUpCounter += 1;
         }
+
+
+
     }
 
     /// <summary>
@@ -93,6 +101,8 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(MovePlayer(Vector2.left));
             }
         }
+
+        anim.SetBool("move", isMoving);
     }
     
     /// <summary>
@@ -125,6 +135,7 @@ public class PlayerController : MonoBehaviour
         if (canCastFire)
         {
             Debug.Log("FIRE!");
+            Instantiate(fireball, shotPoint.transform.position, Quaternion.identity);
             canCastFire = false;
             slotManager.currentMagic.Clear();
             slotManager.DeleteSlotUI();
