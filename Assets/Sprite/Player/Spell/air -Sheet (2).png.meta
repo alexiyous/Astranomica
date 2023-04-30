@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8922ba981b08ae24e8bddeae74d9cf3c
+guid: 3701ed873a3e10c4c9fe4c226d7d8d9f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -141,12 +141,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fireball-Sheet_0
+      name: air -Sheet (2)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
+        x: 35
+        y: 0
+        width: 27
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -155,19 +155,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 658181a2276f4bf4c911f078702c627f
-      internalID: 1727942695
+      spriteID: e7218b602c874a7409594755fef935f8
+      internalID: -1109008869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-Sheet_1
+      name: air -Sheet (2)_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
+        x: 133
+        y: 0
+        width: 25
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -176,19 +176,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf1aefe363a508e4791ccfb16d95401d
-      internalID: 1332881335
+      spriteID: e03bf32150ae91440921944148977468
+      internalID: 20905567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-Sheet_2
+      name: air -Sheet (2)_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
+        x: 221
+        y: 0
+        width: 40
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -197,19 +197,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de6680a9d431da54795fa50fd7e595fa
-      internalID: -216418310
+      spriteID: a63654a22956068429f33e56ebb2f03b
+      internalID: -1608915068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-Sheet_3
+      name: air -Sheet (2)_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
+        x: 327
+        y: 0
+        width: 20
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -218,17 +218,164 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c0f6e4496bea2444b54099386261c6d
-      internalID: -436527474
+      spriteID: eabb7f48df5df364a89eb0e86c636c74
+      internalID: -1217152601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-Sheet_4
+      name: air -Sheet (2)_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 420
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3912a8982710f1b46b43711e201d84e4
+      internalID: 124011273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air -Sheet (2)_5
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 0
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5b63adbbe22b74ea5569f59b9bc5d0
+      internalID: 994652350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air -Sheet (2)_6
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 0
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97523c1c5d9ed854783b6e6e3821297a
+      internalID: -1667363640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air -Sheet (2)_7
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 0
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de01fae61f6eb0e489e9a9bdb062ee02
+      internalID: 933582219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air -Sheet (2)_8
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 0
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9bfff007298344ba13712face2c704
+      internalID: -1818235061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air -Sheet (2)_9
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 69
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156c3c423547b3c4883194f17b55a477
+      internalID: 1826710353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air -Sheet (2)_10
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 0
+        width: 70
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f730059523ca3e40a3b989e1a9a121b
+      internalID: 952082344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air -Sheet (2)_11
+      rect:
+        serializedVersion: 2
+        x: 1059
         y: 0
         width: 32
         height: 32
@@ -239,17 +386,101 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7a20e30193478c4593eebae2b9fef7d
-      internalID: -416712808
+      spriteID: b53402ab933055741b26243c2c2b89c7
+      internalID: 637680785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-Sheet_5
+      name: air -Sheet (2)_12
       rect:
         serializedVersion: 2
-        x: 32
+        x: 1117
+        y: 0
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f166e30fd98dc946bd00ec7485eb129
+      internalID: -1295042725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air -Sheet (2)_13
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 0
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9f4a3d4ec05294fafdc5ac3c2222fe
+      internalID: -187051245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air -Sheet (2)_14
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 0
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7363d8558f172409304814f0e19972
+      internalID: 384152639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air -Sheet (2)_15
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e680f1cb71ad514a8785eb97d54c1e3
+      internalID: 1187646203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air -Sheet (2)_16
+      rect:
+        serializedVersion: 2
+        x: 1308
         y: 0
         width: 32
         height: 32
@@ -260,19 +491,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3f282f023ec8ad42a733bf7064122c7
-      internalID: 1227255252
+      spriteID: e5eb59cf333750f48a64ef77ceb238cf
+      internalID: 584889577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-Sheet_6
+      name: air -Sheet (2)_17
       rect:
         serializedVersion: 2
-        x: 64
+        x: 1346
         y: 0
-        width: 32
+        width: 28
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -281,19 +512,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6879aebc18efdda44bfc43deef5b7ea3
-      internalID: 946239413
+      spriteID: c4445f21ad02cdd4c9a6b539ce652213
+      internalID: 993156934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-Sheet_7
+      name: air -Sheet (2)_18
       rect:
         serializedVersion: 2
-        x: 96
+        x: 1407
         y: 0
-        width: 32
+        width: 29
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -302,19 +533,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bbd345c06a039d49a91e55565e082e1
-      internalID: 1263659422
+      spriteID: 3413a1e0e1dd96344869e5e16b8ad0f7
+      internalID: -1897259493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-Sheet_8
+      name: air -Sheet (2)_19
       rect:
         serializedVersion: 2
-        x: 128
+        x: 1448
         y: 0
-        width: 32
+        width: 21
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -323,19 +554,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c627843b7e6e47468ac59f8482925fb
-      internalID: -242385109
+      spriteID: b67fd293acf4db143987532ba6aa8b73
+      internalID: -1580756704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-Sheet_9
+      name: air -Sheet (2)_20
       rect:
         serializedVersion: 2
-        x: 160
+        x: 1509
         y: 0
-        width: 32
+        width: 19
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -344,71 +575,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc29974e3a3408440b3c4c3ec3687dbe
-      internalID: -1302204576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireball-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69bc0a633a979ab4086615956aedbdd0
-      internalID: 1155001955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireball-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88e911e18f1e90249840a9ce99445609
-      internalID: 404777884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireball-Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0aeaa974a46629848b88ffdc86a75acc
-      internalID: -1781867398
+      spriteID: 28b0a275d7ad5ef45bea0b83defe5ef9
+      internalID: -23601701
       vertices: []
       indices: 
       edges: []
@@ -424,19 +592,27 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fireball-Sheet_12: -1781867398
-      fireball-Sheet_6: 946239413
-      fireball-Sheet_4: -416712808
-      fireball-Sheet_0: 1727942695
-      fireball-Sheet_10: 1155001955
-      fireball-Sheet_8: -242385109
-      fireball-Sheet_7: 1263659422
-      fireball-Sheet_1: 1332881335
-      fireball-Sheet_9: -1302204576
-      fireball-Sheet_2: -216418310
-      fireball-Sheet_5: 1227255252
-      fireball-Sheet_11: 404777884
-      fireball-Sheet_3: -436527474
+      air -Sheet (2)_5: 994652350
+      air -Sheet (2)_13: -187051245
+      air -Sheet (2)_19: -1580756704
+      air -Sheet (2)_10: 952082344
+      air -Sheet (2)_8: -1818235061
+      air -Sheet (2)_7: 933582219
+      air -Sheet (2)_1: 20905567
+      air -Sheet (2)_3: -1217152601
+      air -Sheet (2)_0: -1109008869
+      air -Sheet (2)_9: 1826710353
+      air -Sheet (2)_6: -1667363640
+      air -Sheet (2)_18: -1897259493
+      air -Sheet (2)_2: -1608915068
+      air -Sheet (2)_11: 637680785
+      air -Sheet (2)_14: 384152639
+      air -Sheet (2)_20: -23601701
+      air -Sheet (2)_16: 584889577
+      air -Sheet (2)_17: 993156934
+      air -Sheet (2)_12: -1295042725
+      air -Sheet (2)_4: 124011273
+      air -Sheet (2)_15: 1187646203
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireballController : MonoBehaviour
+public class WaterController : MonoBehaviour
 {
     public float bulletSpeed;
     public Rigidbody2D theRB;
     public Vector2 moveDIR;
 
     public Animator anim;
-    public int damageAmount = 3;
+    public int damageAmount = 2;
     // Update is called once per frame
     void Update()
     {
@@ -27,12 +27,15 @@ public class FireballController : MonoBehaviour
             if (enemy != null)
             {
                 enemy.TakeDamage(damageAmount);
+                moveDIR = Vector2.zero;
                 StartCoroutine(ShowImpact());
+                
             }
 
             if (bos != null)
             {
                 bos.TakeDamage(damageAmount);
+                moveDIR =  Vector2.zero;
                 StartCoroutine(ShowImpact());
             }
         }
@@ -46,7 +49,7 @@ public class FireballController : MonoBehaviour
 
     IEnumerator ShowImpact()
     {
-        anim.SetTrigger("impact");
+        anim.SetTrigger("splash");
         yield return new WaitForSeconds(0.4f);
         Destroy(gameObject);
     }

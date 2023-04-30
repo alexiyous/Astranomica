@@ -24,9 +24,13 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D playerRB;
     public SpellSlotManager slotManager;
     public GameManager gameManager;
+    public GameObject fireball;
+    public GameObject thunder;
+    public GameObject water;
     public Animator anim;
     public Transform shotPoint;
-    public GameObject fireball;
+    public Transform thunderPoint;
+
 
 
     private void Start()
@@ -143,6 +147,7 @@ public class PlayerController : MonoBehaviour
         else if (canCastWater)
         {
             Debug.Log("Water");
+            Instantiate(water, shotPoint.transform.position, Quaternion.identity);
             canCastWater = false;
             slotManager.currentMagic.Clear();
             slotManager.DeleteSlotUI();
@@ -150,6 +155,7 @@ public class PlayerController : MonoBehaviour
         else if (canCastLightning)
         {
             Debug.Log("Lightning");
+            ThunderAttack();
             canCastLightning = false;
             slotManager.currentMagic.Clear();
             slotManager.DeleteSlotUI();
@@ -188,6 +194,26 @@ public class PlayerController : MonoBehaviour
                 slotManager.AddMagicElement("Lightning");
                 pickUpElements = false;
                 gameManager.pickedUp = true;
+            }
+        }
+    }
+
+    public void ThunderAttack()
+    {
+        RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, Vector2.up);
+        foreach (RaycastHit2D hit in hits)
+        {
+            Type1_EnemyHealt enemy = hit.collider.GetComponent<Type1_EnemyHealt>();
+            Boss_Health_System bos = hit.collider.GetComponent<Boss_Health_System>();
+            if (enemy != null)
+            {
+                Instantiate(thunder, thunderPoint.transform.position, Quaternion.identity);
+                Debug.Log("Petir dah ke cast");
+                enemy.TakeDamage(1);
+            }
+            else if (bos != null)
+            {
+                bos.TakeDamage(1);
             }
         }
     }
