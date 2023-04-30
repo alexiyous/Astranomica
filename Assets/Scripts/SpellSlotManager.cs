@@ -9,6 +9,7 @@ public class SpellSlotManager : MonoBehaviour
     public PlayerController player;
 
     public Image[] elementSlots; // array of Image UI elements representing the magic element slots
+    public Sprite slot;
     public Sprite fireSprite; // sprite for the fire magic element
     public Sprite waterSprite; // sprite for the water magic element
     public Sprite lightningSprite; // sprite for the lightning magic element
@@ -95,7 +96,7 @@ public class SpellSlotManager : MonoBehaviour
     {
         foreach (Image image in elementSlots)
         {
-            image.sprite = null;
+            image.sprite = slot;
         }
     }
 }

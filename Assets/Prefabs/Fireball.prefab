@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d07f13d904aec2344af3e0a896193ff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 15
+  bulletSpeed: 7
   theRB: {fileID: 8240676035385909514}
   moveDIR: {x: 0, y: 1}
   anim: {fileID: 8240676035385909515}
