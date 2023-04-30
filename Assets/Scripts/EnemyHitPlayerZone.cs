@@ -10,11 +10,7 @@ public class EnemyHitPlayerZone : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             HealthManager_v1.playerHealth -= 1f;
-            //Destroy(other.gameObject);
             enemyHealth.TakeDamage(10f);
-        }
-        if (other.CompareTag("Bullet"))
-        {
             Destroy(other.gameObject);
         }
     }
