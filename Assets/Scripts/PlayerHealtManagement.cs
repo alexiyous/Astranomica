@@ -15,7 +15,7 @@ public class PlayerHealtManagement : MonoBehaviour
             if (health.playerHealth <= 0)
             {
                 //Player is dead, game over
-                Debug.Log("game over");
+                health.GameOver();
             }
         }
         if (other.CompareTag("Bullet"))

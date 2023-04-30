@@ -10,7 +10,12 @@ public class HealthManager_v1 : MonoBehaviour
     public Sprite fullHearts;
     public Sprite EmptyHearts;
     public GameObject gameOver;
- 
+
+    private void Start()
+    {
+        playerHealth = 3;
+        gameOver.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
@@ -27,11 +32,6 @@ public class HealthManager_v1 : MonoBehaviour
                 hearts[i].sprite = null;
                 hearts[i].color = Color.clear;
             }
-        }
-        
-        if(playerHealth <= 0)
-        {
-            GameOver();
         }
     }
 

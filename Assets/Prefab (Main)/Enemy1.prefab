@@ -208,7 +208,7 @@ MonoBehaviour:
   health: 1
   pointValue: 10
   anim: {fileID: 0}
-  colorChange: {r: 0, g: 0, b: 0, a: 0}
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  spriteRenderer: {fileID: 0}
+  colorChange: {r: 1, g: 0, b: 0, a: 1}
+  defaultColor: {r: 1, g: 1, b: 1, a: 0}
+  spriteRenderer: {fileID: 3613700287405419207}
   hitduration: 0.5

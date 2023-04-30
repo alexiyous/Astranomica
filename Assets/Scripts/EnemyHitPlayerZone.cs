@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHitPlayerZone : MonoBehaviour
 {
     public HealthManager_v1 health;
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         Type1_EnemyHealt enemyHealth = other.GetComponent<Type1_EnemyHealt>();
@@ -22,7 +23,7 @@ public class EnemyHitPlayerZone : MonoBehaviour
             }
             if (health.playerHealth <= 0)
             {
-                // Player is dead, game over
+                health.GameOver();
             }
         }
     }
